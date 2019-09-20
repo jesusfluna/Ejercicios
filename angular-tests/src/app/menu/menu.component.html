@@ -1,0 +1,18 @@
+<div id='principal'>
+
+    <div class="element" style="float: left">
+        <app-campo-fecha texto="Fecha inicial" (salida)=(eventoFechaI($event))>Cargando</app-campo-fecha>
+    </div>
+
+    <div class="element" style="float: right; margin-top: 2%;"> 
+        <app-boton-enviar>Boton</app-boton-enviar>
+        <!-- <app-boton-enviar (fechas)="recibirFechas($event)">Boton</app-boton-enviar> -->
+    </div>
+
+    <div class="element" style="float: center">
+            <app-campo-fecha texto="Fecha final" (salida)=(eventoFechaF($event))>Cargando</app-campo-fecha>
+    </div> 
+
+</div>
+
+<app-grafica>Grafica</app-grafica>
